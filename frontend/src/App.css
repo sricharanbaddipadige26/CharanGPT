@@ -103,3 +103,8 @@
 .input-area button:hover {
   background-color: #0d8c6d;
 }
+/* CharanGPT UI improvements */
+.chat-title {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}

@@ -1,4 +1,4 @@
-
+<h1 className="chat-title">CharanGPT</h1>
 import { useState } from "react";
 import "./App.css";
 
