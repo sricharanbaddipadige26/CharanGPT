@@ -32,3 +32,19 @@ CharanGPT is a ChatGPT-style web application built with a React frontend and Spr
 
 \- CSS
 
+
+
+\## Running the Project
+
+
+
+\### Backend
+
+
+
+```bash
+
+cd backend/demo
+
+mvnw.cmd spring-boot:run
+
