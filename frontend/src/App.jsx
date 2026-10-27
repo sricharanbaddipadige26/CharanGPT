@@ -1,3 +1,4 @@
+<h1>CharanGPT</h1>
 import { useState } from "react";
 import "./App.css";
 
