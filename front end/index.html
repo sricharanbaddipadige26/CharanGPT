@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CharanGPT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <span>CharanGPT</span>
+            </div>
+
+            <button class="new-chat" onclick="newChat()">
+                <span>＋</span>
+                New Chat
+            </button>
+
+            <div class="history">
+
+                <p class="history-title">Today</p>
+
+                <div class="chat-item">
+                    <span>💬</span>
+                    Learn Java OOP
+                </div>
+
+                <div class="chat-item">
+                    <span>💬</span>
+                    LeetCode Problems
+                </div>
+
+                <div class="chat-item">
+                    <span>💬</span>
+                    Spring Boot Help
+                </div>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="profile">
+
+                    <div class="avatar">C</div>
+
+                    <div>
+                        <p>Charan</p>
+                        <span>Free Plan</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+            <!-- Topbar -->
+
+            <header class="topbar">
+
+                <div class="model">
+                    CharanGPT
+                    <span>⌄</span>
+                </div>
+
+                <button class="share-btn">
+                    Share
+                </button>
+
+            </header>
+
+
+            <!-- Welcome Screen -->
+
+            <div class="welcome" id="welcomeScreen">
+
+                <div class="ai-logo">✦</div>
+
+                <h1>How can I help you today?</h1>
+
+                <div class="suggestions">
+
+                    <button onclick="setSuggestion('Explain a difficult concept')">
+
+                        <span>💡</span>
+
+                        Explain a difficult concept
+
+                    </button>
+
+
+                    <button onclick="setSuggestion('Help me write code')">
+
+                        <span>💻</span>
+
+                        Help me write code
+
+                    </button>
+
+
+                    <button onclick="setSuggestion('Help me study')">
+
+                        <span>📚</span>
+
+                        Help me study
+
+                    </button>
+
+
+                    <button onclick="setSuggestion('Help me build a project')">
+
+                        <span>🚀</span>
+
+                        Build a project
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chat Messages -->
+
+            <div
+                class="chat-container"
+                id="chatContainer">
+            </div>
+
+
+            <!-- Input Area -->
+
+            <div class="input-container">
+
+                <div class="input-box">
+
+                    <button class="attach">＋</button>
+
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask CharanGPT anything..."
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        class="send-btn"
+                        onclick="sendMessage()">
+
+                        ↑
+
+                    </button>
+
+                </div>
+
+
+                <p class="disclaimer">
+
+                    CharanGPT can make mistakes.
+                    Check important information.
+
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
