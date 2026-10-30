@@ -19,7 +19,7 @@ function App() {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", {
+      const response = await fetch("http://charangpt.onrender.com/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
