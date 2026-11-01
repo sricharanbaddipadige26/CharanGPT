@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://charan-gpt-two.vercel.app", "http://localhost:5173")
+@CrossOrigin(origins = { "https://charan-gpt-two.vercel.app", "http://localhost:5173" })
 public class ChatController {
 
 
