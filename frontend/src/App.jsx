@@ -1,4 +1,3 @@
-<h1 className="chat-title">CharanGPT</h1>
 import { useState } from "react";
 import "./App.css";
 
@@ -19,15 +18,18 @@ function App() {
     setMessage("");
 
     try {
-      const response = await fetch("https://charangpt.onrender.com/api/chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          message: userMessage
-        })
-      });
+      const response = await fetch(
+        "https://charangpt-2.onrender.com/api/chat",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message: userMessage
+          })
+        }
+      );
 
       const data = await response.json();
 
@@ -79,6 +81,7 @@ function App() {
                   <strong>
                     {msg.sender === "user" ? "You" : "CharanGPT"}:
                   </strong>
+
                   <p>{msg.text}</p>
                 </div>
               ))}
@@ -88,19 +91,23 @@ function App() {
         </div>
 
         <div className="input-area">
+
           <input
             type="text"
             placeholder="Message CharanGPT..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === "Enter") sendMessage();
+              if (e.key === "Enter") {
+                sendMessage();
+              }
             }}
           />
 
           <button onClick={sendMessage}>
             Send
           </button>
+
         </div>
 
       </div>
